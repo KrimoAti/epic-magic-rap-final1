@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Video processing
+*.mp4
+*.avi
+*.mov
+*.mkv
+lipsync.mp4
+trimmed.mp4
+magic.mp4
+final_epic_video.mp4
+
+# Audio
+*.mp3
+*.wav
+*.flac
+energy.npy
+
+# Wav2Lip
+Wav2Lip/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
