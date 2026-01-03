@@ -1,4 +1,5 @@
 import os
+import sys
 import librosa
 import numpy as np
 
@@ -7,6 +8,17 @@ VIDEO = "input/video.mp4"
 AUDIO = "input/audio.mp3"
 DURATION = 185  # 3:05 Minuten
 OUT = "final_epic_video.mp4"
+
+# Check if input files exist
+if not os.path.exists(VIDEO):
+    print(f"❌ Error: Video file not found: {VIDEO}")
+    print("Please place your video file in the input/ directory")
+    sys.exit(1)
+
+if not os.path.exists(AUDIO):
+    print(f"❌ Error: Audio file not found: {AUDIO}")
+    print("Please place your audio file in the input/ directory")
+    sys.exit(1)
 
 # ========= STEP 1: LIPSYNC (Wav2Lip GAN) =========
 print("🎬 STEP 1: Lip-Sync mit Wav2Lip GAN...")
