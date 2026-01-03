@@ -1,0 +1,8 @@
+torch
+torchaudio
+numpy
+librosa
+opencv-python
+ffmpeg-python
+openai-whisper
+gdown
